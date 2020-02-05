@@ -8,14 +8,9 @@
     "twilio": "^3.39.4"
   },
   "scripts": {
-        "build": "node index.js",
-        "start": "node index.js",
-        "test": "standard"
+        "start": "node index.js"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC"
 }
