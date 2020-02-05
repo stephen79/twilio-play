@@ -4,7 +4,9 @@ const port = process.env.PORT || 80 ;
 app.get('/', (req, res) => res.send('Hello World!'))
 // POST method route
 app.post('/makecall', function (req, res) {
-  console.log('make call', req)
+  if (req.body.To) {
+     console.log('make call:' + req.body.To);
+  }
   res.send('POST request')
 })
 
