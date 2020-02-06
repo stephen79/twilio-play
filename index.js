@@ -25,7 +25,8 @@ app.post('/makecall', function (req, res) {
         dial = twiml.dial().sip(req.body.To);
      }
      else {
-        dial = twiml.dial().client(undefined, req.body.To);
+        dial = twiml.dial();
+        dial.client(req.body.To);
      }
   }
   else {
