@@ -15,7 +15,8 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.post('/makecall', function (req, res) {
   const twiml = new VoiceResponse();
   if (req.body.To) {
-     const dial = twiml.dial({ callerId: '+13366001792' });
+     // const dial = twiml.dial({ callerId: '+13366001792' });
+     const dial = twiml.dial({});
      dial.number(req.body.To);
      console.log('make call:' + req.body.To);
   }
